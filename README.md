@@ -11,6 +11,8 @@ EQenhance is a gaze-aware, emotionally intelligent rewrite assistant designed to
 
 - 📊 **GPI (Gaze Pressure Index)**  
   Measures the emotional shift in your rewrite via zero-shot classification (BART) and cosine/PCA-based scoring.
+**Self developed research:
+https://zenodo.org/records/15824808?token=eyJhbGciOiJIUzUxMiJ9.eyJpZCI6ImU5YzZiYTk1LTQ3YjMtNGJlYS05NTVjLTIxZTE4N2VmNzMzMiIsImRhdGEiOnt9LCJyYW5kb20iOiIyYjVhMmY3NjdhYTMxZTE0NDBhNTg3NWY0NTEyY2E5MCJ9.l4UNanBD-LBjvShyyeyW6EBiq8qXqnSDrL4LyMMPRfRSflY7IMVVT7cw8GPrUZdJog60ZSuZpViQBnYpPIVYVQ**
 
 - 📉 **Emotion Score Breakdown**
   - 🧠 Confidence Shift
