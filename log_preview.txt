@@ -1,0 +1,356 @@
+CREATE TABLE logs (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        timestamp TEXT,
+        input_text TEXT,
+        red_output TEXT,
+        final_rewrite TEXT,
+        confidence REAL,
+        structure REAL,
+        emotion REAL,
+        gpi_score REAL
+    );
+id  timestamp                   input_text                                                                                                                           red_output                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      final_rewrite                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   confidence           structure            emotion            gpi_score        
+--  --------------------------  -----------------------------------------------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  -------------------  -------------------  -----------------  -----------------
+5   2025-07-08T12:08:06.532811  Sorry if this isn’t the right time — I can totally wait if needed. I just thought it might help, but I understand if it’s too much.  Let's walk through the RED model:
+
+**Recognize Assumptions**
+
+The speaker assumes that the person they're addressing might not want to hear what they have to say, and that it might be an inconvenient time. They're also assuming that the person might find what they have to say "too much".
+
+**Evaluate Arguments**
+
+Strengths:
+
+* The speaker is considerate of the other person's time and feelings.
+* They're willing to wait and accommodate the other person.
+
+Weaknesses:
+
+* The language is apologetic and hesitant, which might lead the other person to feel uncomfortable or overwhelmed.
+* The speaker is leaving it up to the other person to decide whether or not to hear what they have to say, which might lead to the person feeling put on the spot or uncertain.
+
+Blind spots:
+
+* The speaker might not be considering the potential benefits of sharing their thoughts and ideas, or the value that the other person could gain from hearing them.
+* They might be giving too much power to the other person's reaction, rather than taking ownership of their own message.
+
+**Draw Conclusions**
+
+To create a more emotionally intelligent rewrite, we can focus on clarity, confidence, and empowerment. Here's a rewritten message:
+
+"I wanted to share this idea with you because I think it could be really valuable. Would you be open to hearing more about it? I'm happy to wait until a better time if that works for you, but I wanted to make sure you knew that it's on my mind and I think it could make a positive impact."
+
+In this rewritten message, the speaker is still considerate of the other person's time and feelings, but they're also more confident and clear in their communication. They're taking ownership of their message and inviting the other person to engage with them in a collaborative way, rather than simply apologizing for their own presence.                                                                                                                                                                                                                                                                                                                                                           Let's walk through the RED model:
+
+**Recognize Assumptions**
+
+The speaker assumes that the person they're addressing might not want to hear what they have to say, and that it might be an inconvenient time. They're also assuming that the person might find what they have to say "too much".
+
+**Evaluate Arguments**
+
+Strengths:
+
+* The speaker is considerate of the other person's time and feelings.
+* They're willing to wait and accommodate the other person.
+
+Weaknesses:
+
+* The language is apologetic and hesitant, which might lead the other person to feel uncomfortable or overwhelmed.
+* The speaker is leaving it up to the other person to decide whether or not to hear what they have to say, which might lead to the person feeling put on the spot or uncertain.
+
+Blind spots:
+
+* The speaker might not be considering the potential benefits of sharing their thoughts and ideas, or the value that the other person could gain from hearing them.
+* They might be giving too much power to the other person's reaction, rather than taking ownership of their own message.
+
+**Draw Conclusions**
+
+To create a more emotionally intelligent rewrite, we can focus on clarity, confidence, and empowerment. Here's a rewritten message:
+
+"I wanted to share this idea with you because I think it could be really valuable. Would you be open to hearing more about it? I'm happy to wait until a better time if that works for you, but I wanted to make sure you knew that it's on my mind and I think it could make a positive impact."
+
+In this rewritten message, the speaker is still considerate of the other person's time and feelings, but they're also more confident and clear in their communication. They're taking ownership of their message and inviting the other person to engage with them in a collaborative way, rather than simply apologizing for their own presence.                                                                                                                                                                                                                                                                                                                                                           0.0355356914057758   0.27063017628187     1.69235946974796   1.75518182484637 
+4   2025-07-08T11:54:38.458969  Sorry if this isn’t the right time — I can totally wait if needed. I just thought it might help, but I understand if it’s too much.  Let's walk through the RED model:
+
+**Recognize Assumptions**
+
+The speaker assumes that:
+
+* The recipient (likely a manager or colleague) is busy and might not have time to discuss the topic.
+* The recipient is overwhelmed and might not be able to handle the additional information.
+* The speaker's suggestion might be too much for the recipient to handle.
+
+**Evaluate Arguments**
+
+Strengths:
+
+* The speaker is considerate of the recipient's time and is willing to wait if needed.
+* The speaker is empathetic and acknowledges the recipient's potential limitations.
+
+Weaknesses:
+
+* The language is vague and lacks clarity about the specific topic or concern.
+* The speaker implies that the recipient might be overwhelmed, which could be perceived as invalidating their capabilities.
+* The tone is somewhat apologetic, which might come across as hesitant or uncertain.
+
+Blind spots:
+
+* The speaker doesn't explicitly state what they want to discuss or what they hope to achieve.
+* The speaker assumes the recipient's availability and willingness to discuss the topic without explicitly checking in.
+
+**Draw Conclusions**
+
+To create an emotionally intelligent rewrite, let's focus on clarity, confidence, and empathy. Here's a revised message that addresses the speaker's assumptions and evaluates the arguments:
+
+"Hi [Recipient], I wanted to touch base with you about [specific topic or concern]. I understand you're busy, and I appreciate your time. Before we discuss this further, I want to make sure you're comfortable with the topic and have the bandwidth to handle it. If not, we can schedule a follow-up for when you're available. Can you let me know if this is a good time to discuss, or would you prefer to schedule something else?"
+
+This rewritten message:
+
+* Clearly states the topic or concern.
+* Shows empathy and understanding for the recipient's time and limitations.
+* Checks in with the recipient to ensure they're comfortable and available.
+* Offers flexibility and options for scheduling a follow-up discussion.
+
+By using this revised message, the speaker demonstrates emotional intelligence by being clear, considerate, and respectful of the recipient's time and boundaries.  Let's walk through the RED model:
+
+**Recognize Assumptions**
+
+The speaker assumes that:
+
+* The recipient (likely a manager or colleague) is busy and might not have time to discuss the topic.
+* The recipient is overwhelmed and might not be able to handle the additional information.
+* The speaker's suggestion might be too much for the recipient to handle.
+
+**Evaluate Arguments**
+
+Strengths:
+
+* The speaker is considerate of the recipient's time and is willing to wait if needed.
+* The speaker is empathetic and acknowledges the recipient's potential limitations.
+
+Weaknesses:
+
+* The language is vague and lacks clarity about the specific topic or concern.
+* The speaker implies that the recipient might be overwhelmed, which could be perceived as invalidating their capabilities.
+* The tone is somewhat apologetic, which might come across as hesitant or uncertain.
+
+Blind spots:
+
+* The speaker doesn't explicitly state what they want to discuss or what they hope to achieve.
+* The speaker assumes the recipient's availability and willingness to discuss the topic without explicitly checking in.
+
+**Draw Conclusions**
+
+To create an emotionally intelligent rewrite, let's focus on clarity, confidence, and empathy. Here's a revised message that addresses the speaker's assumptions and evaluates the arguments:
+
+"Hi [Recipient], I wanted to touch base with you about [specific topic or concern]. I understand you're busy, and I appreciate your time. Before we discuss this further, I want to make sure you're comfortable with the topic and have the bandwidth to handle it. If not, we can schedule a follow-up for when you're available. Can you let me know if this is a good time to discuss, or would you prefer to schedule something else?"
+
+This rewritten message:
+
+* Clearly states the topic or concern.
+* Shows empathy and understanding for the recipient's time and limitations.
+* Checks in with the recipient to ensure they're comfortable and available.
+* Offers flexibility and options for scheduling a follow-up discussion.
+
+By using this revised message, the speaker demonstrates emotional intelligence by being clear, considerate, and respectful of the recipient's time and boundaries.  0.00914592782406309  0.00674990526967007  0.267271926822039  0.275039263840695
+3   2025-07-08T11:47:04.569755  Sorry if this isn’t the right time — I can totally wait if needed. I just thought it might help, but I understand if it’s too much.  Let's walk through the RED model!
+
+**Recognize Assumptions:**
+The speaker seems to be making the following assumptions:
+
+* The recipient is busy or overwhelmed, and may not have the time to discuss the matter.
+* The speaker is willing to accommodate the recipient's schedule and priorities.
+* The recipient may be feeling overwhelmed or stressed, and the speaker is trying to be considerate.
+
+**Evaluate Arguments:**
+Strengths:
+
+* The speaker is showing empathy and understanding, which is essential in building a positive relationship.
+* The speaker is offering flexibility and compromise, which can be beneficial in a busy work environment.
+
+Weaknesses:
+
+* The language is somewhat ambiguous, and the recipient may not fully understand what the speaker is offering.
+* The speaker may be assuming the recipient's availability and priorities without explicitly checking.
+
+Blind Spots:
+
+* The speaker may not be considering the recipient's perspective or needs beyond their assumed busyness.
+* The speaker may not be explicitly stating their own needs or expectations.
+
+**Draw Conclusions:**
+Here's a rewritten message that takes into account the RED evaluation:
+
+"Hi, I wanted to touch base with you about [topic]. Before we discuss it, I just wanted to check in with you and make sure you're available and open to chatting. If not, I completely understand and we can schedule a follow-up when you're more free. What's your availability looking like this week?"
+
+This rewritten message:
+
+* Recognizes the recipient's potential busyness and offers flexibility.
+* Explicitly checks in with the recipient about their availability and willingness to discuss the topic.
+* Shows empathy and understanding while also asserting the speaker's own needs and expectations.
+* Is more direct and clear in its language, reducing the risk of misinterpretation.
+
+By using the RED model, we've created a more effective and emotionally intelligent communication that acknowledges the recipient's needs while also asserting the speaker's own needs and expectations.                                                                                                                                                  Let's walk through the RED model!
+
+**Recognize Assumptions:**
+The speaker seems to be making the following assumptions:
+
+* The recipient is busy or overwhelmed, and may not have the time to discuss the matter.
+* The speaker is willing to accommodate the recipient's schedule and priorities.
+* The recipient may be feeling overwhelmed or stressed, and the speaker is trying to be considerate.
+
+**Evaluate Arguments:**
+Strengths:
+
+* The speaker is showing empathy and understanding, which is essential in building a positive relationship.
+* The speaker is offering flexibility and compromise, which can be beneficial in a busy work environment.
+
+Weaknesses:
+
+* The language is somewhat ambiguous, and the recipient may not fully understand what the speaker is offering.
+* The speaker may be assuming the recipient's availability and priorities without explicitly checking.
+
+Blind Spots:
+
+* The speaker may not be considering the recipient's perspective or needs beyond their assumed busyness.
+* The speaker may not be explicitly stating their own needs or expectations.
+
+**Draw Conclusions:**
+Here's a rewritten message that takes into account the RED evaluation:
+
+"Hi, I wanted to touch base with you about [topic]. Before we discuss it, I just wanted to check in with you and make sure you're available and open to chatting. If not, I completely understand and we can schedule a follow-up when you're more free. What's your availability looking like this week?"
+
+This rewritten message:
+
+* Recognizes the recipient's potential busyness and offers flexibility.
+* Explicitly checks in with the recipient about their availability and willingness to discuss the topic.
+* Shows empathy and understanding while also asserting the speaker's own needs and expectations.
+* Is more direct and clear in its language, reducing the risk of misinterpretation.
+
+By using the RED model, we've created a more effective and emotionally intelligent communication that acknowledges the recipient's needs while also asserting the speaker's own needs and expectations.                                                                                                                                                  0.0177112373890403   0.0121919313873198   0.359203666197387  0.373645894219885
+2   2025-07-08T11:28:57.219772  Sorry if this isn’t the right time — I can totally wait if needed. I just thought it might help, but I understand if it’s too much.  Let's walk through the RED model:
+
+**Recognize Assumptions**
+
+* The speaker assumes that the recipient might not be interested or available to discuss the topic.
+* They also assume that their idea might be too much for the recipient to handle.
+
+**Evaluate Arguments**
+
+* The speaker is being considerate of the recipient's time and feelings, which is a positive aspect.
+* However, the message may come across as apologetic and hesitant, which could lead to the recipient feeling uncertain or unimportant.
+* There is no clear value or benefit stated for why the idea would be helpful, which might make it harder for the recipient to understand its importance.
+* The speaker might be overestimating the recipient's potential discomfort or resistance to the idea.
+
+**Draw Conclusions**
+
+* Emotionally intelligent rewrite:
+"Hi [Recipient], I'd like to discuss an idea that I think could be beneficial for our team. I understand that your time is valuable, and I'm happy to adapt to your schedule. Can we find a time that works for you to explore this idea further?"
+
+This rewritten message:
+
+* Clearly states the purpose and potential value of the idea
+* Shows respect for the recipient's time and schedule
+* Avoids apologetic language and instead conveys confidence in the idea
+* Opens a channel for further discussion and collaboration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           Let's walk through the RED model:
+
+**Recognize Assumptions**
+
+* The speaker assumes that the recipient might not be interested or available to discuss the topic.
+* They also assume that their idea might be too much for the recipient to handle.
+
+**Evaluate Arguments**
+
+* The speaker is being considerate of the recipient's time and feelings, which is a positive aspect.
+* However, the message may come across as apologetic and hesitant, which could lead to the recipient feeling uncertain or unimportant.
+* There is no clear value or benefit stated for why the idea would be helpful, which might make it harder for the recipient to understand its importance.
+* The speaker might be overestimating the recipient's potential discomfort or resistance to the idea.
+
+**Draw Conclusions**
+
+* Emotionally intelligent rewrite:
+"Hi [Recipient], I'd like to discuss an idea that I think could be beneficial for our team. I understand that your time is valuable, and I'm happy to adapt to your schedule. Can we find a time that works for you to explore this idea further?"
+
+This rewritten message:
+
+* Clearly states the purpose and potential value of the idea
+* Shows respect for the recipient's time and schedule
+* Avoids apologetic language and instead conveys confidence in the idea
+* Opens a channel for further discussion and collaboration                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           0.153510157657658    0.2446421035702      1.60905210140934   1.79769876524065 
+1   2025-07-08T11:03:28.321039  Sorry if this isn’t the right time — I can totally wait if needed. I just thought it might help, but I understand if it’s too much.  Let's go through the RED model:
+
+**Recognize Assumptions**
+
+The speaker assumes that:
+
+* The recipient is busy or preoccupied (hence, apologizing for the timing)
+* The recipient might find the speaker's suggestion overwhelming or too much to handle
+* The speaker should prioritize the recipient's convenience over their own needs
+
+**Evaluate Arguments**
+
+Strengths:
+
+* The speaker is considerate of the recipient's time and feelings
+* They're acknowledging the possibility that the timing might not be ideal
+
+Weaknesses:
+
+* The language is apologetic and hesitant, which might come across as overly accommodating or hesitant
+* The speaker doesn't explicitly state their own needs or interests
+
+Blind spots:
+
+* Failing to assert their own needs and priorities
+* Assuming the recipient's availability and willingness to engage
+
+**Draw Conclusions**
+
+To rewrite this message with emotionally intelligent communication, I'd suggest:
+
+"Hey, I wanted to reach out and share an idea that I think could be helpful. I'm flexible and can adapt to your schedule, but I'd love to discuss it with you if you're available. Can we find a time that works for you?"
+
+In this rewritten message:
+
+* The speaker is direct and clear about their intention to share an idea
+* They prioritize the recipient's availability and flexibility
+* The language is assertive and confident, without being overly apologetic or hesitant
+* The speaker asserts their own needs and priorities, while still being considerate of the recipient's time and feelings                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               Let's go through the RED model:
+
+**Recognize Assumptions**
+
+The speaker assumes that:
+
+* The recipient is busy or preoccupied (hence, apologizing for the timing)
+* The recipient might find the speaker's suggestion overwhelming or too much to handle
+* The speaker should prioritize the recipient's convenience over their own needs
+
+**Evaluate Arguments**
+
+Strengths:
+
+* The speaker is considerate of the recipient's time and feelings
+* They're acknowledging the possibility that the timing might not be ideal
+
+Weaknesses:
+
+* The language is apologetic and hesitant, which might come across as overly accommodating or hesitant
+* The speaker doesn't explicitly state their own needs or interests
+
+Blind spots:
+
+* Failing to assert their own needs and priorities
+* Assuming the recipient's availability and willingness to engage
+
+**Draw Conclusions**
+
+To rewrite this message with emotionally intelligent communication, I'd suggest:
+
+"Hey, I wanted to reach out and share an idea that I think could be helpful. I'm flexible and can adapt to your schedule, but I'd love to discuss it with you if you're available. Can we find a time that works for you?"
+
+In this rewritten message:
+
+* The speaker is direct and clear about their intention to share an idea
+* They prioritize the recipient's availability and flexibility
+* The language is assertive and confident, without being overly apologetic or hesitant
+* The speaker asserts their own needs and priorities, while still being considerate of the recipient's time and feelings                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               0.049260871555548    0.229437480352943    1.55824839412868   1.63935608760658 
