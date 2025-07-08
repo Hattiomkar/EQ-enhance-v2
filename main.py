@@ -1,3 +1,6 @@
+
+import sqlite3
+from datetime import datetime
 import os
 import openai
 from dotenv import load_dotenv
@@ -7,6 +10,17 @@ from transformers import pipeline
 from scipy.spatial.distance import euclidean, cosine
 from scipy.stats import hmean, zscore
 from sklearn.decomposition import PCA
+st.sidebar.markdown("🏁 **Built for RAISE Hackathon 2025**")
+
+st.sidebar.markdown("**Please give it 3-5 minutes for completely loading - VULTR GPU was denied**")
+
+
+st.sidebar.markdown("""
+1. Review the emotionally loaded message on the left.
+2. Click 🔁 to get a RED-framed suggestion.
+3. Optionally edit the suggestion and view GPI metrics.
+4. Scores + rewrite are saved to local DB and downloadable.
+""")
 
 # Load secrets
 load_dotenv()
@@ -14,6 +28,25 @@ openai.api_key = os.getenv("OPENAI_API_KEY")
 openai.api_base = "https://api.groq.com/openai/v1"
 
 st.set_page_config(page_title="EQenhance", layout="wide")
+
+# -- Setup SQLite database
+conn = sqlite3.connect("eqenhance_logs.db", check_same_thread=False)
+cursor = conn.cursor()
+
+cursor.execute("""
+    CREATE TABLE IF NOT EXISTS logs (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        timestamp TEXT,
+        input_text TEXT,
+        red_output TEXT,
+        final_rewrite TEXT,
+        confidence REAL,
+        structure REAL,
+        emotion REAL,
+        gpi_score REAL
+    )
+""")
+conn.commit()
 
 # Classifier
 classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
@@ -119,6 +152,7 @@ if input_text:
         height=200
     )
 
+
     if rewritten_text:
         rewritten_vec = compute_vector(rewritten_text)
         cos, eig, eucl, gpi = gpi_diff(original_vec, rewritten_vec)
@@ -128,10 +162,65 @@ if input_text:
         col3.metric("Confidence Shift", f"{cos:.4f}")
         col4.metric("Structure Shift", f"{eig:.4f}")
         col5.metric("Emotional Load", f"{eucl:.4f}")
-
         st.metric("📈 Final GPI-Diff Score", f"{gpi:.4f}")
-        st.download_button("📤 Copy to Teams", rewritten_text, file_name="eqenhanced_message.txt")
 
+	# -- Emotional Feedback Summary
+    if gpi < 0.15:
+        st.success("✅ Rewrite is confident, clear, and emotionally regulated.")
+    elif gpi < 0.4:
+        st.info("⚠️ Rewrite is decent but might carry subtle hesitation or passivity.")
+    else:
+        st.warning("🚨 Rewrite still shows signs of stress or masking.")
+
+
+
+
+    # -- Log to DB
+        cursor.execute("""
+            INSERT INTO logs (
+                timestamp, input_text, red_output, final_rewrite,
+                confidence, structure, emotion, gpi_score
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            datetime.now().isoformat(),
+            input_text,
+            st.session_state.red_output,
+            rewritten_text,
+            cos,
+            eig,
+            eucl,
+            gpi
+        ))
+        conn.commit()
+
+# -- Calming Visuals (replaces duck)
+with st.expander("🧘‍♂️ Pause and Regroup"):
+    st.image("https://media.tenor.com/I6kN-6X7nhAAAAAi/loading-thinking.gif", caption="Take a breath — you're safe to reflect.")
+
+# -- Teams Integration Mock Section
+with st.expander("📡 Microsoft Teams Integration (Planned)"):
+    st.markdown("""
+    EQenhance is designed to embed in Microsoft Teams, Slack, or Gmail using adaptive cards. Future versions will detect emotional friction in real-time and offer rewrite suggestions inside chat tools.
+    """)
+    st.image("https://learn.microsoft.com/en-us/graph/images/teams-adaptive-card.png", caption="Mock of future embedded UI")
+
+# -- Judging Panel
+with st.expander("📣 Judges: Why EQenhance Matters"):
+    st.markdown("""
+    - 🚀 Built for emotionally intelligent workplace collaboration
+    - 🔁 Multi-agent design: RED coaching + GPI analytics
+    - 💾 Gaze Pressure Index stored in SQLite for downstream HR use
+    - 📡 Integration-ready for Teams, Slack, and Gmail
+    """)
+
+# -- Demo Instructions
+with st.expander("📽️ Demo Flow"):
+    st.markdown("""
+    1. Review the emotionally loaded message on the left.
+    2. Click 🔁 to get a RED-framed suggestion.
+    3. Optionally edit the suggestion and view GPI metrics.
+    4. Scores + rewrite are saved to local DB and downloadable.
+    """)
 
 
 st.markdown("---")
